@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: MyriadProRegular;
+    src: url(fonts/MyriadProRegular.ttf) format("truetype");
+}
+
+.main-container{
+    font-family: "MyriadProRegular";
+}
+
+.header-text h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 630px;
+    font-size: 18pt;
+    line-height: 21.6pt;
+    text-align: center;
+}
+
+.main-container .main{
+    background-color: #22B573;
+    margin: 24px auto;
+    width: 1400px;
+    border: 4pt #006837 solid;
+}
+
+.main-container .main .nav-bar{
+    display: flex;
+    justify-content: center;
+    margin-left: 135px;
+    margin-top: 50px;
+}
+
+.main-container .main .nav-bar ul{
+    list-style-type: none;
+    display: inherit;
+}
+
+.main-container .main .nav-bar ul a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 48pt;
+    line-height: 57.6pt;
+    margin: auto 20px;
+}
+
+.main-container .main .nav-bar ul li:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.main-container .main .plane{
+    float: right;
+    margin: 25px;
+    animation: direction 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes direction {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(70deg) rotateY(30deg);
+    }
+}
+
+.main-container .main .two-articles{
+    display: flex;
+    margin: 170px;
+}
+
+.main-container .main .two-articles .first{
+    width: 655px;
+    background-color: #FCEE21;
+    color: #000000;
+    transition: width 0.5s, height 0.5s;
+}
+
+.main-container .main .two-articles .first:hover{
+    transform: scale(1.05);
+}
+
+.main-container .main .two-articles .first p{
+    font-family: "MyriadProRegular";
+    text-transform: uppercase;
+    font-size: 14pt;
+    line-height: 11.8pt;
+    margin: 10px;
+}
+
+.main-container .main .two-articles .first .typograph1{
+    float: right;
+    margin: 15px;
+    border-radius: 50%;
+    animation: spinning 2s infinite;
+}
+
+.main-container .main .two-articles .second{
+    width: 555px;
+    background-color: #FCEE21;
+    color: #006837;
+    margin: 20px;
+}
+
+.main-container .main .two-articles .second:hover{
+    transform: scale(1.05);
+}
+
+.main-container .main .two-articles .second p{
+    font-family: "MyriadProRegular";
+    text-transform: uppercase;
+    font-size: 14pt;
+    line-height: 11.8pt;
+    margin: 10px;
+}
+
+.main-container .main .two-articles .second .typograph2{
+    float: left;
+    margin: 15px;
+    animation: spinning 2s infinite;
+    border-radius: 50%;
+}
+
+@keyframes spinning {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+
+}
+
